@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>move</title>
+        <style>
+            input,
+            body,
+            .limite,
+            label,
+            btto {
+                margin-left: 10px;
+                margin-top: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            body {
+                background: black;
+                color: white;
+            }
+            .limite {
+                background: white;
+                border: 3px solid lightgreen;
+                width: 750px;
+                height: 500px;
+            }
+            input,
+            label {
+                height: 30px;
+                width: 200px;
+                font-size: 30px;
+            }
+            .mov {
+                cursor: move;
+                background: black;
+                width: 100px;
+                height: 100px;
+                position: absolute;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <input type="button" name="p" id="p" value="paragraph" />
+            <input type="button" name="button" id="button" value="button" />
+        </div>
+        <div class="limite">
+            <div class="mov"></div>
+        </div>
+        <div>
+            <label for="name">name:</label>
+            <input type="text" name="name" id="name" />
+            <label for="valorx">valorX:</label>
+            <input type="number" name="valorx" id="valorx" />
+            <label for="valory">valorY:</label>
+            <input type="number" name="valory" id="valory" />
+            <label for="Color">Color:</label>
+            <input type="text" name="Color" id="Color" />
+            <div class="btto">
+                <input type="button" name="enter" id="enter" value="Enter" />
+            </div>
+        </div>
+    </body>
+    <script src="./id.js"></script>
+</html>
